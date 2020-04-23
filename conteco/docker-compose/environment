@@ -7,7 +7,7 @@ export CONTECO_DC_GLOBAL_STACKNAMES_PREVIOUS="conteco_dc_kafka_connect,conteco_d
 export CONTECO_DC_GLOBAL_STACKNAMES="conteco_dc_kafka_connect,conteco_dc_kafka_connect_ext_rest"
 export CONTECO_DC_GLOBAL_BOOTSTACKS="conteco_dc_kafka_connect"
 export CONTECO_DC_GLOBAL_RUNSTACKS="conteco_dc_kafka_connect_ext_rest"
-export CONTECO_DC_GLOBAL_VOLUME_LIST=""
+export CONTECO_DC_GLOBAL_VOLUME_LIST="${DOLLAR}{CONTECO_STACKPREFIX}_kafka_connect_secrets_volume,${DOLLAR}{CONTECO_STACKPREFIX}_kafka_connect_connect_secrets_volume,${DOLLAR}{CONTECO_STACKPREFIX}_kafka_connect_data_volume,${DOLLAR}{CONTECO_STACKPREFIX}_kafka_connect_jars_volume"
 # END CONFIGURATION
 
 # START GLOBAL SETTINGS
